@@ -1,0 +1,29 @@
+         dn: ou=people,dc=zagor
+         objectClass: organizationalUnit
+         ou: people
+ 
+         dn: ou=groups,dc=zagor
+         objectClass: organizationalUnit
+         ou: groups
+ 
+         dn: cn=developers,ou=Groups,dc=zagor
+         objectClass: posixGroup
+         cn: developers
+         gidNumber: 1003
+ 
+         dn: uid=sana,ou=people,dc=zagor
+         objectClass: person
+         objectClass: inetOrgPerson
+         objectClass: posixAccount
+         objectClass: shadowAccount
+         uid: sana_ne
+         sn: Sana
+         givenName:Ne
+         cn: Sane Ne
+         displayName: Sane Ne
+         gecos:deneme@mail.com
+         uidNumber: 1000
+         gidNumber: 1003 //developers
+         !!!!userPassword: sanapass
+         loginShell: /bin/bash
+         homeDirectory: /home/sana
